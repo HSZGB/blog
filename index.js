@@ -1,18 +1,21 @@
 let count = 0;
 
-document.getElementById("myH1").textContent = count;
+const countLabel = document.getElementById("myH1");
+const decreaseBtn = document.getElementById("decrease");
+const increaseBtn = document.getElementById("increase");
+const resetBtn = document.getElementById("reset");
 
-document.getElementById("decrease").onclick = function() {
+decreaseBtn.onclick = function() {
     count--;
-    document.getElementById("myH1").textContent = count;
+    countLabel.textContent = count;
 }
 
-document.getElementById("increase").onclick = function() {
+increaseBtn.onclick = function() {
     count++;
-    document.getElementById("myH1").textContent = count;
+    countLabel.textContent = count;
 }
 
-document.getElementById("reset").onclick = function() {
+resetBtn.onclick = function() {
     count = 0;
-    document.getElementById("myH1").textContent = count;
+    countLabel.textContent = count;
 }
