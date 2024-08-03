@@ -5,6 +5,8 @@ const decreaseBtn = document.getElementById("decrease");
 const increaseBtn = document.getElementById("increase");
 const resetBtn = document.getElementById("reset");
 
+const myAudio = document.getElementById("myAudio");
+
 decreaseBtn.onclick = function() {
     count--;
     countLabel.textContent = count;
@@ -13,6 +15,7 @@ decreaseBtn.onclick = function() {
 increaseBtn.onclick = function() {
     count++;
     countLabel.textContent = count;
+    myAudio.play();
 }
 
 resetBtn.onclick = function() {
